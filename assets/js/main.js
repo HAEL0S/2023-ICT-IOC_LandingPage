@@ -1,12 +1,13 @@
 "use strict";
-import { LoadSpeakers } from "./speakers.js";
+import {LoadSpeakers} from './speakers.js';
 
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
 
+RenderSpeakerSection();
+
 window.onload=function() 
 {   
-    RenderSpeakerSection();
     headerAnimation();
 };
 
@@ -134,10 +135,12 @@ setInterval(function () {
 function RenderSpeakerSection() {
 
     var speakers = LoadSpeakers();
+    shuffle(speakers);
+    
     var speakersView = document.getElementById("speakers-section-row");
     var speakerViewTemplate = document.querySelector('#template-speaker-item');
 
-    for(var speaker in speakers)
+    for(var speaker of speakers)
     {
         var speakerView = document.importNode(speakerViewTemplate.content, true);
         speakerView.getElementById("speaker-name").innerHTML = speaker.name;
@@ -146,4 +149,8 @@ function RenderSpeakerSection() {
         speakerView.getElementById("speaker-pic").setAttribute("src", speaker.pic);
         speakersView.appendChild(speakerView);
     }
+}
+
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
 }
