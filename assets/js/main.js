@@ -1,12 +1,13 @@
 "use strict";
+import { LoadSpeakers } from "./speakers.js";
 
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
 
 window.onload=function() 
 {   
-    headerAnimation(); 
-
+    RenderSpeakerSection();
+    headerAnimation();
 };
 
 window.onresize=function() 
@@ -128,3 +129,21 @@ setInterval(function () {
     secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">초</span>'; 
  
 }, 1000);
+
+/* ==== ==== */
+function RenderSpeakerSection() {
+
+    var speakers = LoadSpeakers();
+    var speakersView = document.getElementById("speakers-section-row");
+    var speakerViewTemplate = document.querySelector('#template-speaker-item');
+
+    for(var speaker in speakers)
+    {
+        var speakerView = document.importNode(speakerViewTemplate.content, true);
+        speakerView.getElementById("speaker-name").innerHTML = speaker.name;
+        speakerView.getElementById("speaker-position").innerHTML = speaker.position;
+        speakerView.getElementById("speaker-company").innerHTML = speaker.company;
+        speakerView.getElementById("speaker-pic").setAttribute("src", speaker.pic);
+        speakersView.appendChild(speakerView);
+    }
+}
