@@ -2,6 +2,10 @@
 
 닷넷데브에서 진행하는 .NET Conf 2022 x Seoul의 랜딩 페이지입니다.
 
+## 사이트 미리보기
+
+[https://dotnetdev-kr.github.io/DotNetConf2022_LandingPage/](https://dotnetdev-kr.github.io/DotNetConf2022_LandingPage/) 에서 미리 보실 수 있습니다.
+
 ## 테스트 방법
 
 로컬 디스크에 이 리포지터리를 Clone한 후, 간이 웹 서버를 이용하여 `index.html` 페이지를 볼 수 있기만 하면 쉽게 페이지 미리 보기가 가능합니다. Python 3를 이용하는 것이 가장 간편합니다. Windows OS를 사용할 경우, `Windows에서 Python 사용하는 방법` 소단원을 참고하시기 바랍니다.
@@ -9,7 +13,7 @@
 Bash 및 호환 셸에서 다음과 같이 명령어를 입력합니다.
 
 ```bash
-\$ python3 -m http.server 9000
+$ python3 -m http.server 9000
 ```
 
 PowerShell에서는 다음과 같이 명령어를 입력합니다.
