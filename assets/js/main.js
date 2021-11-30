@@ -147,10 +147,34 @@ function RenderSpeakerSection() {
         speakerView.getElementById("speaker-position").innerHTML = speaker.position;
         speakerView.getElementById("speaker-company").innerHTML = speaker.company;
         speakerView.getElementById("speaker-pic").setAttribute("src", speaker.pic);
+        
+        var snsListView = speakerView.getElementById("speaker-sns-list");
+        for(var snsUrl of speaker.sns){
+            var snsView = renderSnsView(snsUrl);
+            snsListView.appendChild(snsView);
+        }
+
         speakersView.appendChild(speakerView);
     }
 }
 
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
+}
+
+function renderSnsView(snsUrl)
+{
+    var element = document.createElement("li");
+    element.setAttribute("class", "list-inline-item");
+
+    if (snsUrl.startsWith("https://www.facebook.com"))
+        element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-facebook fa-fw"></i></a>';
+    else if (snsUrl.startsWith("https://github.com"))
+        element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-github fa-fw"></i></a>';
+    else if (snsUrl.startsWith("https://www.twitter.com"))
+        element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-twitter fa-fw"></i></a>';
+    else
+        element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-web fa-fw"></i></a>';
+
+    return element;
 }
