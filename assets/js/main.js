@@ -1,10 +1,15 @@
 "use strict";
 import {LoadSpeakers} from './speakers.js';
 
+/* data */
+const speakers = LoadSpeakers();
+shuffle(speakers);
+    
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
 
-RenderSpeakerSection();
+renderSpeakerSection();
+registerModalHandler();
 
 window.onload=function() 
 {   
@@ -132,11 +137,8 @@ setInterval(function () {
 }, 1000);
 
 /* ==== ==== */
-function RenderSpeakerSection() {
+function renderSpeakerSection() {
 
-    var speakers = LoadSpeakers();
-    shuffle(speakers);
-    
     var speakersView = document.getElementById("speakers-section-row");
     var speakerViewTemplate = document.querySelector('#template-speaker-item');
 
@@ -147,6 +149,8 @@ function RenderSpeakerSection() {
         speakerView.getElementById("speaker-position").innerHTML = speaker.position;
         speakerView.getElementById("speaker-company").innerHTML = speaker.company;
         speakerView.getElementById("speaker-pic").setAttribute("src", speaker.pic);
+        speakerView.getElementById("speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
+        speakerView.getElementById("read-more").setAttribute("data-index", speakers.indexOf(speaker));
         
         var snsListView = speakerView.getElementById("speaker-sns-list");
         for(var snsUrl of speaker.sns){
@@ -157,6 +161,29 @@ function RenderSpeakerSection() {
         speakersView.appendChild(speakerView);
     }
 }
+
+function registerModalHandler() {
+    document.getElementById('modal-speaker-1').addEventListener('show.bs.modal', function (arg) {
+        var indexOfSpeakers = arg.relatedTarget.dataset['index'];
+        fillSpeakerDataOnModal(speakers[indexOfSpeakers]);
+    });
+}
+
+function fillSpeakerDataOnModal(speaker) {
+    var modal = document.getElementById("modal-speaker-1").getRootNode();
+    modal.getElementById("modal-speaker-name").innerHTML = speaker.name;
+    modal.getElementById("modal-speaker-position").innerHTML = speaker.position;
+    modal.getElementById("modal-speaker-company").innerHTML = speaker.company;
+    modal.getElementById("modal-speaker-pic").setAttribute("src", speaker.pic);
+
+    var snsListView = modal.getElementById("modal-speaker-sns-list");
+    snsListView.innerHTML = "";
+    for(var snsUrl of speaker.sns){
+        var snsView = renderSnsView(snsUrl);
+        snsListView.appendChild(snsView);
+    }
+}
+
 
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);

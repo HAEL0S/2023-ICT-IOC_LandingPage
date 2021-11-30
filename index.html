@@ -536,17 +536,17 @@
 					<div class="theme-bg-light p-5">
 						<div class="row">
 							<div class="col-12 col-md-auto text-center">
-							    <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="assets/images/speakers/speaker-1.jpg" alt="" />
+							    <img id="modal-speaker-pic" class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="assets/images/speakers/speaker-1.jpg" alt="" />
 							</div>
 							
 							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">스피커 이름</h2>
-								<div class="meta">직함 또는 직급</div>
-								<div class="meta mb-2">회사 또는 단체명</div>
-								<ul class="social-list list-inline mb-0">								
-									<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<h2 id="modal-speaker-name" class="name mb-2">스피커 이름</h2>
+								<div id="modal-speaker-position" class="meta">직함 또는 직급</div>
+								<div id="modal-speaker-company" class="meta mb-2">회사 또는 단체명</div>
+								<ul id="modal-speaker-sns-list" class="social-list list-inline mb-0">								
+									<!-- <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
 									<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-									<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-github fa-fw"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-github fa-fw"></i></a></li> -->
 								</ul><!--//social-list--> 
 							</div><!--//col-->
 						</div><!--//row-->
@@ -564,7 +564,7 @@
 	<template id="template-speaker-item">
 		<div class="col-6 col-lg-3 mb-4">
 			<div class="card rounded-0">
-				<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">
+				<a id="speaker-pic-container" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">
 					<img id="speaker-pic" src="assets/images/speakers/speaker-7.jpg" class="card-img-top rounded-0" alt="">
 				</a>
 				<div class="card-body">
@@ -573,7 +573,7 @@
 						<div id="speaker-position" class="meta">Senior Software Developer</div>
 						<div id="speaker-company" class="meta">Facebook</div>
 					</div><!--//card-text-->
-					<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Read more &rarr;</a>
+					<a id="read-more" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Read more &rarr;</a>
 				</div><!--//card-->
 				<div class="card-footer text-muted">
 					<ul id="speaker-sns-list" class="social-list list-inline mb-0"></ul><!--//social-list-->
