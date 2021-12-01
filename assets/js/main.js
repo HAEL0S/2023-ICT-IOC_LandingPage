@@ -175,6 +175,7 @@ function fillSpeakerDataOnModal(speaker) {
     modal.getElementById("modal-speaker-position").innerHTML = speaker.position;
     modal.getElementById("modal-speaker-company").innerHTML = speaker.company;
     modal.getElementById("modal-speaker-pic").setAttribute("src", speaker.pic);
+    modal.getElementById("modal-speaker-introduction").innerHTML = speaker.introduction;
 
     var snsListView = modal.getElementById("modal-speaker-sns-list");
     snsListView.innerHTML = "";
