@@ -8,6 +8,7 @@ shuffle(speakers);
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
 
+renderStats();
 renderSpeakerSection();
 registerModalHandler();
 
@@ -205,4 +206,9 @@ function renderSnsView(snsUrl)
         element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-web fa-fw"></i></a>';
 
     return element;
+}
+
+function renderStats() {
+    document.getElementById("num-of-speakers").innerHTML = speakers.length;
+    document.getElementById("num-of-sessions").innerHTML = speakers.length;
 }
