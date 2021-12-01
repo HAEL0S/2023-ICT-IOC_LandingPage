@@ -42,7 +42,7 @@ export function LoadSpeakers() {
                   ["https://www.facebook.com/", "https://github.com"]),
 
       new Speaker("김정우", "클라우드메이트", "팀장",
-                  "As-is: &#34;Cloud native한 프로젝트 개발에 관심이 많습니다.&#34;<br>To-be: &#34;Cloud native 기반의 프로젝트 개발을 하고 있습니다.&#34;",
+                  "As-is: &#34;Cloud native한 프로젝트 개발에 관심이 많습니다.&#34;<br>To-be: &#34;Cloud native 기반의 프로젝트 개발을 하고 있습니다.&#34;<br><br>2020.10~ 클라우드메이트 서비스개발팀 리더<br>2009~2020 모두투어 ERP 자체 개발<br>2005~2008 영림원 프로젝트 협업",
                   "assets/images/speakers/jw.kim.jpg",
                   ["https://www.facebook.com/jungwoo.kim1230", "https://rokag3-gb.github.io/"]),
 
