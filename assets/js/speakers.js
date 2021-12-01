@@ -41,10 +41,10 @@ export function LoadSpeakers() {
                   "assets/images/speakers/sw.mun.png",
                   ["https://www.facebook.com/", "https://github.com"]),
 
-      new Speaker("김정우", "", "",
-                  "Azure, AWS 환경에서 .NET, SQL 등의 기술로 서비스를 개발하는 일을 하고 있습니다.<br> Cloud native한 프로젝트 개발에 관심이 많습니다.<br>2020.10~ 클라우드메이트 서비스개발팀 리더<br>2009~2020 모두투어 ERP 자체 개발<br>2005~2008 영림원 프로젝트 협업",
+      new Speaker("김정우", "클라우드메이트", "팀장",
+                  "As-is: &#34;Cloud native한 프로젝트 개발에 관심이 많습니다.&#34;<br>To-be: &#34;Cloud native 기반의 프로젝트 개발을 하고 있습니다.&#34;",
                   "assets/images/speakers/jw.kim.jpg",
-                  ["https://www.facebook.com/", "https://github.com"]),
+                  ["https://www.facebook.com/jungwoo.kim1230", "https://rokag3-gb.github.io/"]),
 
       new Speaker("정유진", "", "GitHub Campus Expert",
                   "이화여자대학교에 재학 중인 학생 정유진입니다.<br>한국 최초 GitHub Campus Expert로 선정되어 다양한 행사 및 활동들에 참여하고 주최하며 학생 개발자 및 엔지니어 커뮤니티를 활성화시키는데 힘을 쓰고 있습니다.",

@@ -203,7 +203,7 @@ function renderSnsView(snsUrl)
     else if (snsUrl.startsWith("https://www.twitter.com"))
         element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-twitter fa-fw"></i></a>';
     else
-        element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-web fa-fw"></i></a>';
+        element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fa fa-cloud fa-fw"></i></a>';
 
     return element;
 }
