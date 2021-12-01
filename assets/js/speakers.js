@@ -38,7 +38,7 @@ export function LoadSpeakers() {
 
       new Speaker("문성원", "플라네타리움", "CTO",
                   "플라네타리움 CTO",
-                  "assets/images/speakers/sw.mun.png",
+                  "assets/images/speakers/sw.mun.jpg",
                   ["https://www.facebook.com/", "https://github.com"]),
 
       new Speaker("김정우", "클라우드메이트", "팀장",
@@ -68,7 +68,7 @@ export function LoadSpeakers() {
 
       new Speaker("박상만", "루나소프트", "DevOps & Beck-end Developer",
                   "...",
-                  "assets/images/speakers/psmon.png",
+                  "assets/images/speakers/psmon.jpg",
                   ["https://www.facebook.com/", "https://github.com"]),
 
       new Speaker("고요한", "", "Windows Developer",
