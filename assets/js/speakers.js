@@ -75,5 +75,10 @@ export function LoadSpeakers() {
                   "...",
                   "assets/images/speakers/yh.ko.jpg",
                   ["https://www.facebook.com/", "https://github.com"]),
+
+      new Speaker("김상현", "Saige Research", "Software architect",
+                  "...",
+                  "assets/images/speakers/sh.kim.jpg",
+                  ["https://medium.com/@Thwj", "https://github.com/sang-hyeon"]),
     ]
 }
