@@ -66,7 +66,7 @@ export function LoadSpeakers() {
                   "assets/images/speakers/ec.lee.jpeg",
                   ["https://www.facebook.com/", "https://github.com"]),
 
-      new Speaker("박상만", "루나소프트", "DevOps & Beck-end Developer",
+      new Speaker("박상만", "루나소프트", "",
                   "...",
                   "assets/images/speakers/psmon.jpg",
                   ["https://www.facebook.com/", "https://github.com"]),
