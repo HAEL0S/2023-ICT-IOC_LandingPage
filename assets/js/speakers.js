@@ -31,7 +31,7 @@ export function LoadSpeakers() {
                   "assets/images/speakers/Greg-Lutz.jpg",
                   ["https://www.facebook.com/", "https://github.com"]),
 
-      new Speaker("김정수", "", "",
+      new Speaker("김정수", "DotNetAMA", "",
                   "저는 프로그램 개발자로서 ASP와 ASP.NET SI 및 SM 업무를 담당하였습니다.<br>여러 회사에서 인사 총무 등의 인트라넷 시스템과 포털사이트 시스템 개발 및 운영을 해왔습니다. 프로그래밍 언어는 ASP.NET C#을 실무에서 주로 다루었고, DATABASE는 Oracle과 MSSQL Server를 실무에서 많이 사용하였습니다.<br>Udemy 강사로도 활동하고 있습니다.",
                   "assets/images/speakers/js.kim.png",
                   ["https://www.youtube.com/channel/UCubNpKsnK4Z9L92iroTKyvw"]),
