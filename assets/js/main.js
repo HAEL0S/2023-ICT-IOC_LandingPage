@@ -10,6 +10,7 @@ const header = document.getElementById('header');
 
 renderStats();
 renderSpeakerSection();
+renderSessions();
 registerModalHandler();
 
 window.onload=function() 
@@ -160,6 +161,28 @@ function renderSpeakerSection() {
         }
 
         speakersView.appendChild(speakerView);
+    }
+}
+
+function renderSessions()
+{
+    var scheduleView = document.getElementById("session-list");
+    var sessionTemplate = document.querySelector('#template-session');
+
+    for(var speaker of speakers)
+    {
+        var sessionView = document.importNode(sessionTemplate.content, true);
+        sessionView.getElementById("session-speaker-name").innerHTML = speaker.name;
+        sessionView.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
+
+        sessionView.getElementById("session-title").innerHTML = speaker.session.title;
+        sessionView.getElementById("session-category").innerHTML = speaker.session.category;
+        sessionView.getElementById("session-description").innerHTML = speaker.session.description;
+        
+        sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
+        sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
+
+        scheduleView.appendChild(sessionView);
     }
 }
 

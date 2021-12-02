@@ -188,27 +188,13 @@
 			
 			<!-- Tab panes -->
 			<div class="schedule-tab-content tab-content">
-				<div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">9:00 - 9:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-1.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">James Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Best Practices And Tips For A Clean Angular Application</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room A</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
+				<div id="session-list" class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">					
 				</div><!--//tab-1-content-->
 			</div><!--//schedule-tab-content-->
-			<div class="schedule-cta text-center mx-auto">
-				<!--<a href="#" class="btn btn-primary btn-lg me-md-2 d-block d-md-inline-block mb-3 mb-md-0" target="_blank">Download Schedule</a>-->
-				<!-- <a href="#" class="btn btn-secondary btn-lg d-block d-md-inline-block" target="_blank">신청하기</a> -->
-			</div>
+			<!-- <div class="schedule-cta text-center mx-auto">
+				<a href="#" class="btn btn-primary btn-lg me-md-2 d-block d-md-inline-block mb-3 mb-md-0" target="_blank">Download Schedule</a>
+				<a href="#" class="btn btn-secondary btn-lg d-block d-md-inline-block" target="_blank">신청하기</a>
+			</div> -->
 		</div><!--//container-->
 	</section><!--//schedule-section-->
 	
@@ -292,7 +278,8 @@
 					<div class="theme-bg-light p-5">
 						<div class="row">
 							<div class="col-12 col-md-auto text-center">
-							    <img id="modal-speaker-pic" class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="assets/images/speakers/speaker-1.jpg" alt="" />
+							    <img id="modal-speaker-pic" class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto"
+										style="width: 6rem; height: 6rem; object-fit: cover;" src="" alt="" />
 							</div>
 							
 							<div class="col text-center text-md-start mx-auto">
@@ -310,6 +297,28 @@
 			</div><!--//modal-content-->
 		</div><!--//modal-dialog-->
 	</div><!--//modal-->
+
+	<!-- session template -->
+	<template id="template-session">
+		<div class="item item-talk">
+			<div class="meta">
+				<h4 class="time mb-3">0:00 - 0:00</h4>
+				<div class="profile">
+					<a id="session-speaker-pic-container" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">
+						<img id="session-speaker-pic" class="profile-image rounded-circle  mb-2" style="width: 3rem; height: 3rem; object-fit: cover;" alt="">
+					</a>
+					<div class="name">
+						<a id="session-speaker-name" class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">James Doe</a>
+					</div>
+				</div><!--//profile-->
+			</div><!--//meta-->
+			<div class="content">
+				<h3 id="session-title" class="title mb-3">Best Practices And Tips For A Clean Angular Application</h3>
+				<div id="session-category" class="location mb-3" style="font-size: 0.8rem; font-style: italic;">AAAA</div>
+				<div id="session-description" class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+			</div><!--//content-->
+		</div><!--//item-->
+	</template>
 
 	<!-- speaker template-->
 	<template id="template-speaker-item">
