@@ -52,8 +52,8 @@ export function LoadSpeakers() {
                   ["https://www.facebook.com/", "https://github.com"],
                   new Session(sessionCategory[0], "WinUI 시작하기 (가제)", "데스크톱 앱 개발을 위해 Microsoft에서 새롭게 릴리즈한 WinUI에 대해서 알아보세요. WinUI를 시작하는 방법과 이를 활용하여 쉽고 빠른 개발을 위한 가이드를 제공합니다.")),
 
-      new Speaker("김정수", "DotNetAMA", "",
-                  "저는 프로그램 개발자로서 ASP와 ASP.NET SI 및 SM 업무를 담당하였습니다.<br>여러 회사에서 인사 총무 등의 인트라넷 시스템과 포털사이트 시스템 개발 및 운영을 해왔습니다. 프로그래밍 언어는 ASP.NET C#을 실무에서 주로 다루었고, DATABASE는 Oracle과 MSSQL Server를 실무에서 많이 사용하였습니다.<br>Udemy 강사로도 활동하고 있습니다.",
+      new Speaker("김정수", "프리랜서 개발자", "Udemy 강사",
+                  "현재 프리랜서 닷넷 개발자로 활동하며, DotNetAMA Youtube 채널을 운영하고 있습니다.<br>또한 Udemy 강사도 병행하고 있습니다.",
                   "assets/images/speakers/js.kim.png",
                   ["https://www.youtube.com/channel/UCubNpKsnK4Z9L92iroTKyvw"],
                   new Session(sessionCategory[1], "API Server 구축하기", "ASP.NET Core 개발자가 마이크로서비스로 진입하기 위한 준비과정")),
