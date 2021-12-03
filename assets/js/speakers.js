@@ -85,7 +85,7 @@ export function LoadSpeakers() {
       new Speaker("김예건", "망고슬래브", "",
                   "망고슬래브 주식회사 소프트웨어 개발팀에서 .NET 으로 제품을 개발하고 있으며, ibocon.tistory.com 이라는 기술 블로그를 운영하고 있습니다.",
                   "assets/images/speakers/yg.kim.jpg",
-                  ["https://www.facebook.com/", "https://github.com"],
+                  ["https://github.com/ibocon", "https://ibocon.tistory.com"],
                   new Session(sessionCategory[1], "Blazor WebAssembly + Webpack + Sass + TypeScript", "Blazor WASM 에 Sass 와 TypeScript 를 Webpack 으로 번들링하여 Nuget 패키지로 배포하고 사용하는 과정을 발표하고자 합니다.")),
 
       new Speaker("이은찬", "당근마켓", "DevOps & Beck-end Developer",
