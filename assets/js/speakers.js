@@ -56,7 +56,7 @@ export function LoadSpeakers() {
                   "현재 프리랜서 닷넷 개발자로 활동하며, DotNetAMA Youtube 채널을 운영하고 있습니다.<br>또한 Udemy 강사도 병행하고 있습니다.",
                   "assets/images/speakers/js.kim.png",
                   ["https://www.youtube.com/channel/UCubNpKsnK4Z9L92iroTKyvw"],
-                  new Session(sessionCategory[1], "API Server 구축하기", "ASP.NET Core 개발자가 마이크로서비스로 진입하기 위한 준비과정")),
+                  new Session(sessionCategory[1], "EFCore Migration 작업 및 Bootstrap5 계층형 메뉴 제작", "1. Library에서 EFCore Migration 작업하기<br>2. Bootstrap5 계층형 메뉴 만들기")),
 
       new Speaker("문성원", "플라네타리움", "CTO",
                   "플라네타리움 CTO",
