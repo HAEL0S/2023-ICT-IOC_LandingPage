@@ -46,10 +46,10 @@ export function LoadSpeakers() {
                   ["https://www.facebook.com/", "https://github.com"],
                   new Session(sessionCategory[1], "Blazor로 앱 개발 가속화", "Blazor 및 Infragistics App Builder를 사용하여  다음과 같은 세션을 제공할 예정입니다.<br>1) App Builder가 무엇이며 WYSIWG에서 코딩 없이 모든 화면을 디자인할 수 있는 방법<br>2) 풍부한 데이터 그리드 및 데이터 차트 컨트롤을 사용하고 한 줄의 코드로 데이터에 바인딩하는 방법<br>3) Dock Manager로 데스크탑과 같은 경험을 만들어 사용자에게 화면 공간 관리에 있어 최고의 유연성을 제공하는 방법")),
 
-      new Speaker("Greg Lutz", "GrapeCity", "ComponentOne Global Product Manager",
-                  "GrapeCity - ComponentOne Global Product Manager",
+      new Speaker("Greg Lutz", "GrapeCity", "Global Product Manager",
+                  "GrapeCity의 Greg Lutz는 GrapeCity의 소프트웨어 컴포넌트의 Global Product Manager로서, 전략, 로드맵, 기능 정의 및 개발을 담당하고 있으며, 개발자에게 차별화된 기능을 제공하기 위해 시장과 경쟁 조건을 연구하고 주도하고 있습니다.<br><br>또한, ASP.NET, WinForms, WPF, WinRT, UWP, Silverlight, Xamarin 및 Blazor를 포함한 Microsoft 개발 스택을 14년 이상 사용하여 개발 및 연구를 진행하고 있으며, 개발자가 더 나은 데스크톱, 웹 및 모바일 앱을 구축하는 데 도움이 되는 250개 이상의 다양한 블로그 포스팅 및 Microsoft .NET 커뮤니티를 위한 다양한 활동을 하고 있습니다.",
                   "assets/images/speakers/Greg-Lutz.jpg",
-                  ["https://www.facebook.com/", "https://github.com"],
+                  ["https://dev.grapecity.co.kr/", "https://www.facebook.com/GrapeCityKor/", "https://www.youtube.com/channel/UChn5GSeq6vxg0xvQwNFhLHQ", "https://pf.kakao.com/_ClxiWxb", "https://www.grapecity.co.kr/"],
                   new Session(sessionCategory[0], "WinUI 시작하기 (가제)", "데스크톱 앱 개발을 위해 Microsoft에서 새롭게 릴리즈한 WinUI에 대해서 알아보세요. WinUI를 시작하는 방법과 이를 활용하여 쉽고 빠른 개발을 위한 가이드를 제공합니다.")),
 
       new Speaker("김정수", "프리랜서 개발자", "Udemy 강사",

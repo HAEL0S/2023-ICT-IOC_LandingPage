@@ -229,6 +229,8 @@ function renderSnsView(snsUrl)
         element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-medium fa-fw"></i></a>';
     else if (snsUrl.startsWith("https://www.youtube."))
         element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fab fa-youtube fa-fw"></i></a>';
+    else if (snsUrl.startsWith("https://dev.grapecity"))
+        element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fas fa-building fa-fw"></i></a>';
     else
         element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fa fa-cloud fa-fw"></i></a>';
 
