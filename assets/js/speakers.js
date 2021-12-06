@@ -107,10 +107,10 @@ export function LoadSpeakers() {
                   new Session("챗봇", "SlackBotMessages을 이용한 슬랫 봇 만들기", "닷넷을 이용한 슬랙 봇 만들기입니다.")),
 
       new Speaker("김상현", "Saige Research", "Software architect",
-                  "...",
+                  "김상현님은 Software Architect로써 현명한 애플리케이션 서비스를 위한 아키텍처링과 응집력 높은 기술 조직 운영에 관심이 많습니다.<br>애플리케이션 서비스를 위해 요구되는 다양한 기술 이해도를 바탕으로 매년 개최되는 .NET Con에 꾸준히 참가하고 있습니다. 또한 국내 소프트웨어 기술 커뮤니티에서 활발히 활동하고 있습니다.",
                   "assets/images/speakers/sh.kim.jpg",
                   ["https://medium.com/@Thwj", "https://github.com/sang-hyeon"],
                   new Session(sessionCategory[4],
-                              "마이크로서비스에서도 정신건강 챙길수 있어! Dapr!", "Microservices와 같은 분산 아키텍처를 운영하면 어쩔수없이 필요로하게 되는 도구들이 많습니다.<br>Dapr는 이러한 도구들의 추상체와 구현체를 제공합니다.<br>메세지 브로커? 서비스간 원격 프로시저 호출? Dapr안에 모두 있습니다.<br> 또한 C#, Java, Python등 여러 언어를 지원하기에 다양한 언어로 구현된 서비스간 통합이 가능합니다."))
+                              "마이크로서비스에서도 비용 챙길 수 있어! Dapr!", "Microservices와 같은 분산 아키텍처를 운영하면 어쩔수없이 필요로하게 되는 도구들이 많습니다.<br>Dapr는 이러한 도구들의 빌딩 블럭들을 제공함과 동시에 운영에 필요한 다양한 기능을 지원합니다.<br>메세지 브로커? 서비스간 원격 프로시저 호출? Metrics? Dapr안에 모두 있습니다.<br>또한 C#, Java, Python등 여러 언어를 지원하기에 다양한 언어로 구현된 서비스간 통합이 가능합니다."))
     ]
 }
