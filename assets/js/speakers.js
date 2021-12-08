@@ -79,7 +79,7 @@ export function LoadSpeakers() {
       new Speaker("박구삼", "망고슬래브", "",
                   "안녕하세요.<br>닷넷기술과 멀티플랫폼에 관심이 많은 닷넷개발자입니다.<br>잘 부탁드립니다 :)",
                   "assets/images/speakers/gs.park.jpg",
-                  ["https://www.facebook.com/", "https://github.com"],
+                  ["https://github.com/level120"],
                   new Session(sessionCategory[4], ".Net 6와 Azure Function 4.0 그리고 OpenAPI Extension 소개", "닷넷6.0 발표로 인해 Azure Function 4.0을 맞아 어떤 변경점이 있는지와 REST API를 Azure Function을 이용해 개발할 때 도움이 되는 OpenAPI 확장을 소개합니다.")),
 
       new Speaker("김예건", "망고슬래브", "",
@@ -88,10 +88,10 @@ export function LoadSpeakers() {
                   ["https://github.com/ibocon", "https://ibocon.tistory.com"],
                   new Session(sessionCategory[1], "Blazor WebAssembly + Webpack + Sass + TypeScript", "Blazor WASM 에 Sass 와 TypeScript 를 Webpack 으로 번들링하여 Nuget 패키지로 배포하고 사용하는 과정을 발표하고자 합니다.")),
 
-      new Speaker("이은찬", "당근마켓", "DevOps & Beck-end Developer",
+      new Speaker("이은찬", "당근마켓", "DevOps & Backend Developer",
                   "당근마켓 클라우드 데브옵스 및 백엔드 개발자입니다.<br>쿠버네티스 및 AWS 인프라 SRE 와 Go 언어로 검색인덱서 및 ElasticSearch 클러스터 관리 하였고 이후 Spring 으로 ECommerce 를 작업하다가 현재 Node 로 백엔드 작업 중이고 .NET 으로 언어 리팩토링하고 있습니다.",
                   "assets/images/speakers/ec.lee.jpeg",
-                  ["https://www.facebook.com/", "https://github.com"],
+                  ["https://www.facebook.com/eunchan123", "https://github.com/ckcks12", "https://eunchan.com"],
                   new Session(sessionCategory[1], "Go, Spring, Node 개발자가 본 .NET6 (부제 : 엥 이게 Express 가 아니라 C# 이었다고?)", "Go, Spring, Node 를 각각 경험하면서 불편했던 점들과 대비해 .NET 가 버전6에 이르러서 완성된 모습의 장점들과 이해를 담았습니다.")),
 
       new Speaker("박상만", "루나소프트", "",
@@ -106,7 +106,7 @@ export function LoadSpeakers() {
                   ["https://www.facebook.com/", "https://github.com"],
                   new Session("챗봇", "SlackBotMessages을 이용한 슬랫 봇 만들기", "닷넷을 이용한 슬랙 봇 만들기입니다.")),
 
-      new Speaker("김상현", "Saige Research", "Software architect",
+      new Speaker("김상현", "Saige Research", "Software Architect",
                   "김상현님은 Software Architect로써 현명한 애플리케이션 서비스를 위한 아키텍처링과 응집력 높은 기술 조직 운영에 관심이 많습니다.<br>애플리케이션 서비스를 위해 요구되는 다양한 기술 이해도를 바탕으로 매년 개최되는 .NET Con에 꾸준히 참가하고 있습니다. 또한 국내 소프트웨어 기술 커뮤니티에서 활발히 활동하고 있습니다.",
                   "assets/images/speakers/sh.kim.jpg",
                   ["https://medium.com/@Thwj", "https://github.com/sang-hyeon"],
