@@ -101,9 +101,9 @@ export function LoadSpeakers() {
                   new Session(sessionCategory[1], "Blazor를 활용한 그래픽 웹채팅", "게임에 사용되는 렌더링(Canvas)와 SignalR(+Akka.net)을 Blazor에 통합하여 그래픽 웹채팅구현")),
 
       new Speaker("고요한", "", "Windows Developer",
-                  "...",
+                  "안녕하세요. 닷넷데브 운영진 고요한입니다.<br>현재는 쉬고 있으며 챗봇 관련하여 닷넷콘에 발표를 진행하게 되었습니다. 2014년도 부터 C++ MFC개발자로 시작했으며 현재 C# WinForm으로 개발을 하고 있는 윈도우 응용프로그래머입니다.<br>기본 CRUD 프로그램 및 ERP 및 키오스크 등 다양한 윈도우 어플리케이션 개발을 해왔으며 마지막 작업으로는 Python으로 연계 프로그램도 담당하였습니다.",
                   "assets/images/speakers/yh.ko.jpg",
-                  ["https://www.facebook.com/", "https://github.com"],
+                  ["https://www.facebook.com/kimozex", "https://github.com/kimozex", "https://kimozex.notion.site/245263c3c9d54a4f9c9bb437f814b64d"],
                   new Session("챗봇", "SlackBotMessages을 이용한 슬랫 봇 만들기", "닷넷을 이용한 슬랙 봇 만들기입니다.")),
 
       new Speaker("김상현", "Saige Research", "Software Architect",
