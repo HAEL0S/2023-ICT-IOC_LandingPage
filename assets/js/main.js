@@ -171,18 +171,21 @@ function renderSessions()
 
     for(var speaker of speakers)
     {
-        var sessionView = document.importNode(sessionTemplate.content, true);
-        sessionView.getElementById("session-speaker-name").innerHTML = speaker.name;
-        sessionView.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
+        for(var session of speaker.sessions)
+        {
+            var sessionView = document.importNode(sessionTemplate.content, true);
+            sessionView.getElementById("session-speaker-name").innerHTML = speaker.name;
+            sessionView.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
 
-        sessionView.getElementById("session-title").innerHTML = speaker.session.title;
-        sessionView.getElementById("session-category").innerHTML = speaker.session.category;
-        sessionView.getElementById("session-description").innerHTML = speaker.session.description;
-        
-        sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
-        sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
+            sessionView.getElementById("session-title").innerHTML = session.title;
+            sessionView.getElementById("session-category").innerHTML = session.category;
+            sessionView.getElementById("session-description").innerHTML = session.description;
+            
+            sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
+            sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
 
-        scheduleView.appendChild(sessionView);
+            scheduleView.appendChild(sessionView);
+        }
     }
 }
 
