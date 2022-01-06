@@ -111,6 +111,14 @@ export function LoadSpeakers() {
                   "assets/images/speakers/sh.kim.jpg",
                   ["https://medium.com/@Thwj", "https://github.com/sang-hyeon"],
                   new Session(sessionCategory[4],
-                              "마이크로서비스에서도 비용 챙길 수 있어! Dapr!", "Microservices와 같은 분산 아키텍처를 운영하면 어쩔수없이 필요로하게 되는 도구들이 많습니다.<br>Dapr는 이러한 도구들의 빌딩 블럭들을 제공함과 동시에 운영에 필요한 다양한 기능을 지원합니다.<br>메세지 브로커? 서비스간 원격 프로시저 호출? Metrics? Dapr안에 모두 있습니다.<br>또한 C#, Java, Python등 여러 언어를 지원하기에 다양한 언어로 구현된 서비스간 통합이 가능합니다."))
+                              "마이크로서비스에서도 비용 챙길 수 있어! Dapr!", "Microservices와 같은 분산 아키텍처를 운영하면 어쩔수없이 필요로하게 되는 도구들이 많습니다.<br>Dapr는 이러한 도구들의 빌딩 블럭들을 제공함과 동시에 운영에 필요한 다양한 기능을 지원합니다.<br>메세지 브로커? 서비스간 원격 프로시저 호출? Metrics? Dapr안에 모두 있습니다.<br>또한 C#, Java, Python등 여러 언어를 지원하기에 다양한 언어로 구현된 서비스간 통합이 가능합니다.")),
+
+      new Speaker("남정현", "데브시스터즈", "",
+                  "",
+                  "assets/images/speakers/sh.kim.jpg",
+                  ["https://medium.com/@Thwj"],
+                  new Session(sessionCategory[0],
+                              "인터넷 뱅킹에 자유를! 식탁보 프로젝트 이야기",
+                              "인터넷 뱅킹을 Windows PC에서 사용할 때 느끼는 불편함을 최소화하기 위하여 시작한 식탁보라는 오픈 소스 유틸리티를 개발하며서 적용했던 여러 가지 기술들에 대한 이야기를 풀어봅니다. 오래된 UI 프레임워크를 가지고 MSI 인스톨러 패키지를 만들고, 코드 서명을 입히며, GitHub Action을 이용하여 자동 빌드하고 릴리스를 적용하는 노하우에 대해 이야기합니다."))
     ]
 }
