@@ -67,9 +67,9 @@ export function LoadSpeakers() {
                   "assets/images/speakers/js.kim.png",
                   ["https://www.youtube.com/channel/UCubNpKsnK4Z9L92iroTKyvw"],
                   [new Session(sessionCategory[1],
-                              "ASP.NET MVC, 웹 API, 웹 프론트엔드 (Blazor)",
                               "개별 Project에서 EFCore Migration 작업하기",
-                              2)]),
+                              "CLI방식으로 EFCore Migration 작업하는 것을 직접 보여주고, 개별 Project에서 Migration이 안되는 이유와 해결책을 제시합니다. 마지막으로 Migration으로 script를 추출하는 방법도 알려드립니다.",
+                              1)]),
 
       new Speaker("문성원", "플라네타리움", "CTO",
                   "플라네타리움 CTO",
