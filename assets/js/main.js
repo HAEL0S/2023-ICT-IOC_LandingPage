@@ -180,7 +180,7 @@ function renderSessions()
             sessionView.getElementById("session-title").innerHTML = session.title;
             sessionView.getElementById("session-category").innerHTML = session.category;
             sessionView.getElementById("session-description").innerHTML = session.description;
-            sessionView.getElementById("session-level").innerHTML = "필요 전문성: " + session.level;
+            sessionView.getElementById("session-level").innerHTML = translateSessionLevel(session.level);
             
             sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
             sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
@@ -239,6 +239,18 @@ function renderSnsView(snsUrl)
         element.innerHTML = '<a  href="'+ snsUrl + '"><i class="fa fa-cloud fa-fw"></i></a>';
 
     return element;
+}
+
+function translateSessionLevel(level)
+{
+    switch(level)
+    {
+        case 0: return "누구나 들으실 수 있어요.";
+        case 1: return "처음 배우시는 분께 추천 드려요.";
+        case 2: return "주제에 친숙하신 분께 추천 드려요.";
+        case 3: return "실무에서 개발하시는 분께 추천 드려요.";
+        case 4: return "전문가를 위해 추천 드려요.";
+    }
 }
 
 function renderStats() {
