@@ -167,7 +167,7 @@ export function LoadSpeakers() {
       new Speaker("최영선", "Microsoft", "Support Engineer (Azure PaaS)",
                   "마이크로소프트에서 Support Engineer 로 Azure App Service 지원을 맡고 있습니다.<br>Azure Web App, Function App에 대한 관심이 많습니다.",
                   "assets/images/speakers/ys.c.jpg",
-                  ["https://www.naver.com"],
+                  ["https://www.facebook.com/yeongseonchoe", "https://www.linkedin.com/in/yeongseonchoe"],
                   [new Session(sessionCategory[1],
                               "Azure Application insight를 이용한 ASP.NET Core 모니터링",
                               "Azure Application Insights는 Azure에서 제공하는 Application Performance Monitoring 서비스입니다. 어플리케이션의 성능 및 가용성을 모니터링 할 수 있습니다. 이번 발표에서는 ASP.NET Core application에서 Application Insight를 적용하여 Application 모니터링 하는 방법에 대해 이야기하고자 합니다.",
