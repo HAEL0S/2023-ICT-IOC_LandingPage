@@ -95,7 +95,7 @@ export function LoadSpeakers() {
                   [new Session(sessionCategory[4],
                               ".Net 6에서 도입예정인 MAUI 기술 소개 및 Xamarin과의 차이점 알아보기",
                               "Xamarin을 차세대 기술인 MAUI에 대해서 알아보고 현재 기술인 Xamarin과 어떤 차이가 있는지 비교합니다.",
-                              2)]),
+                              0)]),
 
       new Speaker("김예건", "망고슬래브", "",
                   "망고슬래브 주식회사 소프트웨어 개발팀에서 .NET 으로 제품을 개발하고 있으며, ibocon.tistory.com 이라는 기술 블로그를 운영하고 있습니다.",
@@ -128,7 +128,7 @@ export function LoadSpeakers() {
                   "assets/images/speakers/yh.ko.jpg",
                   ["https://www.facebook.com/kimozex", "https://github.com/kimozex", "https://kimozex.notion.site/245263c3c9d54a4f9c9bb437f814b64d"],
                   [new Session(sessionCategory[1],
-                              "SlackBotMessages을 이용한 슬랫 봇 만들기",
+                              "C#으로 하는 정규표현식",
                               "닷넷을 이용한 슬랙 봇 만들기입니다. 예제를 통한 사용법을 살펴봅니다.",
                               1)]),
 
@@ -144,15 +144,15 @@ export function LoadSpeakers() {
       new Speaker("남정현", "데브시스터즈", "테크니컬 라이터",
                   "Microsoft MVP로 2009년부터 활동해오고 있으며, 현재는 테크니컬 라이터로서 기술 작가와 오픈 소스 개발 활동을 병행하고 있습니다.",
                   "assets/images/speakers/nam.png",
-                  ["https://github.com/rkttu", "https://www.rkttu.com/"],
+                  ["https://github.com/rkttu", "https://rkttu.com/"],
                   [new Session(sessionCategory[0],
                               "인터넷 뱅킹에 자유를! 식탁보 프로젝트 이야기",
                               "인터넷 뱅킹을 Windows PC에서 사용할 때 느끼는 불편함을 최소화하기 위하여 시작한 식탁보라는 오픈 소스 유틸리티를 개발하며서 적용했던 여러 가지 기술들에 대한 이야기를 풀어봅니다. 오래된 UI 프레임워크를 가지고 MSI 인스톨러 패키지를 만들고, 코드 서명을 입히며, GitHub Action을 이용하여 자동 빌드하고 릴리스를 적용하는 노하우에 대해 이야기합니다.",
                               3)]),
 
-      new Speaker("이종인", "", "",
-                  "",
-                  "",
+      new Speaker("이종인", "DesignMe AI", "Developer",
+                  "모든 곳에 가고자 하는 .NET으로 모든 곳에 돌아가는 서비스를 개발하고 있는 개발자입니다. Microsoft MVP로 8년 째 활동 중입니다.",
+                  "assets/images/speakers/jongin.lee.jpg",
                   ["https://www.naver.com"],
                   [new Session(sessionCategory[0],
                               "WinUI로 iOS, Android 심지어 웹 앱까지 개발할 수 있다고? Uno Platform 소개",
@@ -164,13 +164,22 @@ export function LoadSpeakers() {
                               2)],
                       ),
       
-      new Speaker("최영선", "", "",
-                  "",
-                  "",
+      new Speaker("최영선", "Microsoft", "Support Engineer (Azure PaaS)",
+                  "마이크로소프트에서 Support Engineer 로 Azure App Service 지원을 맡고 있습니다.<br>Azure Web App, Function App에 대한 관심이 많습니다.",
+                  "assets/images/speakers/ys.c.jpg",
                   ["https://www.naver.com"],
                   [new Session(sessionCategory[1],
                               "Azure Application insight를 이용한 ASP.NET Core 모니터링",
                               "Azure Application Insights는 Azure에서 제공하는 Application Performance Monitoring 서비스입니다. 어플리케이션의 성능 및 가용성을 모니터링 할 수 있습니다. 이번 발표에서는 ASP.NET Core application에서 Application Insight를 적용하여 Application 모니터링 하는 방법에 대해 이야기하고자 합니다.",
+                              1)]),
+
+      new Speaker("유저스틴", "Microsoft", "Senior Cloud Advocate",
+                  "마이크로소프트에서 시니어 클라우드 아드보캇으로 일하고 있습니다.<br>개발자 커뮤니티에서 주로 애저 클라우드와 닷넷을 얘기합니다.",
+                  "assets/images/speakers/justin-yoo.png",
+                  ["https://www.naver.com"],
+                  [new Session(sessionCategory[1],
+                              "신상! 닷넷 6를 위한 애저 펑션 OpenAPI 확장 기능 소개",
+                              "애저 펑션에서 사용하는 OpenAPI 확장 기능이 이제 닷넷 6에서도 작동합니다. API 통합을 위해 디팩토 표준인 OpenAPI 문서를 실시간으로 생성해주는 이 확장 기능을 이용해 애저 펑션 앱을 만드는 방법, 그리고 기존 애저 펑션 앱을 닷넷 6로 손쉽게 업그레이드 하는 방법에 대해 소개합니다.",
                               1)])
     ]
 }
