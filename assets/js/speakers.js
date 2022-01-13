@@ -176,7 +176,7 @@ export function LoadSpeakers() {
       new Speaker("유저스틴", "Microsoft", "Senior Cloud Advocate",
                   "마이크로소프트에서 시니어 클라우드 아드보캇으로 일하고 있습니다.<br>개발자 커뮤니티에서 주로 애저 클라우드와 닷넷을 얘기합니다.",
                   "assets/images/speakers/justin-yoo.png",
-                  ["https://www.naver.com"],
+                  ["https://twitter.com/justinchronicle", "https://github.com/justinyoo", "https://blog.aliencube.org"],
                   [new Session(sessionCategory[1],
                               "신상! 닷넷 6를 위한 애저 펑션 OpenAPI 확장 기능 소개",
                               "애저 펑션에서 사용하는 OpenAPI 확장 기능이 이제 닷넷 6에서도 작동합니다. API 통합을 위해 디팩토 표준인 OpenAPI 문서를 실시간으로 생성해주는 이 확장 기능을 이용해 애저 펑션 앱을 만드는 방법, 그리고 기존 애저 펑션 앱을 닷넷 6로 손쉽게 업그레이드 하는 방법에 대해 소개합니다.",
