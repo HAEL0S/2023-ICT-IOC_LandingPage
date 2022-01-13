@@ -129,7 +129,7 @@ export function LoadSpeakers() {
                   ["https://www.facebook.com/kimozex", "https://github.com/kimozex", "https://kimozex.notion.site/245263c3c9d54a4f9c9bb437f814b64d"],
                   [new Session(sessionCategory[1],
                               "C#으로 하는 정규표현식",
-                              "닷넷을 이용한 슬랙 봇 만들기입니다. 예제를 통한 사용법을 살펴봅니다.",
+                              "C#에서 Regex 클래스에 대해서 소개합니다. 간단한 정규표현식에 대해서 소개하는 세션입니다. .net interactive를 이용하여 발표가 진행됩니다.",
                               1)]),
 
       new Speaker("김상현", "Saige Research", "Software Architect",
