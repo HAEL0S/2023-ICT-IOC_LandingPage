@@ -48,7 +48,7 @@ export function LoadSpeakers() {
       new Speaker("Jason Beres", "Infragistics", "개발자 도구 부회장",
                   "Infragistics의 개발자 도구 부회장이신 Jason Beres와 그의 글로벌 팀은 Infragistics의 모든 개발자 중심 도구, UX 도구 및 비즈니스 솔루션 전반에 걸쳐 고객 중심의 혁신적인 기능을 주도하고 있습니다.<br> 25년 이상의 업계 경험과 Infragistics에서 17년의 경력을 가진 Jason은 Infragistics에서 제품 관리, 기술 전도 및 서비스를 위한 공식 기능을 설립했으며 현재 제품 개발을 운영하고 있습니다. Jason은 SQL Server, C#, Rich Client 및 Web Development와 같은 주제를 다루는 엔터프라이즈 소프트웨어 개발에 관한 10권의 책과 수십 개의 잡지 기사를 저술했습니다. Jason은 세계적으로 컨퍼런스 스피커이자 전 11년 간의 Microsoft MVP이며 UX 및 개발자 커뮤니티에서 매우 활발하게 활동하고 있습니다.",
                   "assets/images/speakers/jason-beres.jfif",
-                  ["https://www.facebook.com/", "https://github.com"],
+                  [],
                   [new Session(sessionCategory[1], "Blazor로 앱 개발 가속화", "Blazor 및 Infragistics App Builder를 사용하여  다음과 같은 세션을 제공할 예정입니다.<br>1) App Builder가 무엇이며 WYSIWG에서 코딩 없이 모든 화면을 디자인할 수 있는 방법<br>2) 풍부한 데이터 그리드 및 데이터 차트 컨트롤을 사용하고 한 줄의 코드로 데이터에 바인딩하는 방법<br>3) Dock Manager로 데스크탑과 같은 경험을 만들어 사용자에게 화면 공간 관리에 있어 최고의 유연성을 제공하는 방법", 1)]
                 ),
 
@@ -74,7 +74,7 @@ export function LoadSpeakers() {
       new Speaker("문성원", "플라네타리움", "CTO",
                   "플라네타리움 CTO",
                   "assets/images/speakers/sw.mun.jpg",
-                  ["https://www.facebook.com/", "https://github.com"],
+                  [],
                   [new Session(sessionCategory[2],
                                 ".NET 6 전환기",
                                 ".NET Core 3.1 로 작성된 프로젝트를 .NET 6으로 마이그레이션 했던 일화들을 소개합니다.",
@@ -153,7 +153,7 @@ export function LoadSpeakers() {
       new Speaker("이종인", "DesignMe AI", "Developer",
                   "모든 곳에 가고자 하는 .NET으로 모든 곳에 돌아가는 서비스를 개발하고 있는 개발자입니다. Microsoft MVP로 8년 째 활동 중입니다.",
                   "assets/images/speakers/jongin.lee.jpg",
-                  ["https://www.naver.com"],
+                  [],
                   [new Session(sessionCategory[0],
                               "WinUI로 iOS, Android 심지어 웹 앱까지 개발할 수 있다고? Uno Platform 소개",
                               "WinUI와 C#으로 윈도우 앱을 개발할 때 사용하는 코드 그대로 iOS, Andorid 앱 심지어 웹까지 개발할 수 있으며 MAUI 등 여러 닷넷의 크로스플랫폼 개발 방법 중 Pixel Perfect 개념을 지향하고 있는 Uno Platform을 소개합니다.",
