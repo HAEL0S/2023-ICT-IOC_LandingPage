@@ -166,14 +166,15 @@ function renderSpeakerSection() {
 
 function renderSessions()
 {
-    var scheduleView = document.getElementById("session-list");
-    var sessionTemplate = document.querySelector('#template-session');
+    var scheduleViewDay1 = document.getElementById("session-list-day1");
+    var sessionTemplateDay1 = document.querySelector('#template-session');
 
     for(var speaker of speakers)
     {
         for(var session of speaker.sessions)
         {
-            var sessionView = document.importNode(sessionTemplate.content, true);
+            if (session.day != 1) { continue; }
+            var sessionView = document.importNode(sessionTemplateDay1.content, true);
             sessionView.getElementById("session-speaker-name").innerHTML = speaker.name;
             sessionView.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
 
@@ -186,10 +187,51 @@ function renderSessions()
             sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
             sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
 
-            scheduleView.appendChild(sessionView);
+            scheduleViewDay1.appendChild(sessionView);
+        }
+    }
+
+    var scheduleViewDay2 = document.getElementById("session-list-day2");
+    var sessionTemplateDay2 = document.querySelector('#template-session');
+
+    for(var speaker of speakers)
+    {
+        for(var session of speaker.sessions)
+        {
+            if (session.day != 2) { continue; }
+            var sessionView = document.importNode(sessionTemplateDay2.content, true);
+            sessionView.getElementById("session-speaker-name").innerHTML = speaker.name;
+            sessionView.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
+
+            sessionView.getElementById("session-title").innerHTML = session.title;
+            sessionView.getElementById("session-category").innerHTML = session.category;
+            sessionView.getElementById("session-description").innerHTML = session.description;
+            sessionView.getElementById("session-salespoint").innerHTML = session.salespoint;
+            sessionView.getElementById("session-level").innerHTML = translateSessionLevel(session.level);
+            
+            sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
+            sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
+
+            scheduleViewDay2.appendChild(sessionView);
         }
     }
 }
+
+document.getElementById('tab-1').addEventListener('click', (e) => {
+    var tabPaneClasses = document.getElementsByClassName('tab-pane');
+    for(var i = 0; i < tabPaneClasses.length; i++) {
+        tabPaneClasses[i].classList.remove('active');
+    }
+    document.getElementById('session-list-day1').classList.add('active');
+});
+
+document.getElementById('tab-2').addEventListener('click', (e) => {
+    var tabPaneClasses = document.getElementsByClassName('tab-pane');
+    for(var i = 0; i < tabPaneClasses.length; i++) {
+        tabPaneClasses[i].classList.remove('active');
+    }
+    document.getElementById('session-list-day2').classList.add('active');
+});
 
 function registerModalHandler() {
     document.getElementById('modal-speaker-1').addEventListener('show.bs.modal', function (arg) {
