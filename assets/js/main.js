@@ -1,15 +1,10 @@
 "use strict";
-import {LoadSpeakers, LoadSpeakersForDay, LoadSessions} from './speakers.js';
+import {LoadSpeakers, LoadSessions} from './speakers.js';
 
 /* data */
 const speakers = LoadSpeakers();
-shuffle(speakers);
-
-const day1Speakers = LoadSpeakersForDay(1);
-const day2Speakers = LoadSpeakersForDay(2);
-
-const day1Sessions = LoadSessions(1);
-const day2Sessions = LoadSessions(2);
+const sessions = LoadSessions();
+//shuffle(speakers);
     
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
@@ -175,50 +170,50 @@ function renderSessions()
     var scheduleViewDay1 = document.getElementById("session-list-day1");
     var sessionTemplateDay1 = document.querySelector('#template-session');
 
-    for(var speaker of day1Speakers)
+    for(var speaker of speakers)
     {
         for(var session of speaker.sessions)
         {
-            if (session.day != 1) { continue; }
-            var sessionView = document.importNode(sessionTemplateDay1.content, true);
-            sessionView.getElementById("session-speaker-name").innerHTML = speaker.name;
-            sessionView.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
+            if (session.day != 1) continue;
+            var sessionViewDay1 = document.importNode(sessionTemplateDay1.content, true);
+            sessionViewDay1.getElementById("session-speaker-name").innerHTML = speaker.name;
+            sessionViewDay1.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
 
-            sessionView.getElementById("session-title").innerHTML = session.title;
-            sessionView.getElementById("session-category").innerHTML = session.category;
-            sessionView.getElementById("session-description").innerHTML = session.description;
-            sessionView.getElementById("session-salespoint").innerHTML = session.salespoint;
-            sessionView.getElementById("session-level").innerHTML = translateSessionLevel(session.level);
+            sessionViewDay1.getElementById("session-title").innerHTML = session.title;
+            sessionViewDay1.getElementById("session-category").innerHTML = session.category;
+            sessionViewDay1.getElementById("session-description").innerHTML = session.description;
+            sessionViewDay1.getElementById("session-salespoint").innerHTML = session.salespoint;
+            sessionViewDay1.getElementById("session-level").innerHTML = translateSessionLevel(session.level);
             
-            sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
-            sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
+            sessionViewDay1.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
+            sessionViewDay1.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
 
-            scheduleViewDay1.appendChild(sessionView);
+            scheduleViewDay1.appendChild(sessionViewDay1);
         }
     }
 
     var scheduleViewDay2 = document.getElementById("session-list-day2");
     var sessionTemplateDay2 = document.querySelector('#template-session');
 
-    for(var speaker of day2Speakers)
+    for(var speaker of speakers)
     {
         for(var session of speaker.sessions)
         {
-            if (session.day != 2) { continue; }
-            var sessionView = document.importNode(sessionTemplateDay2.content, true);
-            sessionView.getElementById("session-speaker-name").innerHTML = speaker.name;
-            sessionView.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
+            if (session.day != 2) continue;
+            var sessionViewDay2 = document.importNode(sessionTemplateDay2.content, true);
+            sessionViewDay2.getElementById("session-speaker-name").innerHTML = speaker.name;
+            sessionViewDay2.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
 
-            sessionView.getElementById("session-title").innerHTML = session.title;
-            sessionView.getElementById("session-category").innerHTML = session.category;
-            sessionView.getElementById("session-description").innerHTML = session.description;
-            sessionView.getElementById("session-salespoint").innerHTML = session.salespoint;
-            sessionView.getElementById("session-level").innerHTML = translateSessionLevel(session.level);
+            sessionViewDay2.getElementById("session-title").innerHTML = session.title;
+            sessionViewDay2.getElementById("session-category").innerHTML = session.category;
+            sessionViewDay2.getElementById("session-description").innerHTML = session.description;
+            sessionViewDay2.getElementById("session-salespoint").innerHTML = session.salespoint;
+            sessionViewDay2.getElementById("session-level").innerHTML = translateSessionLevel(session.level);
             
-            sessionView.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
-            sessionView.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
+            sessionViewDay2.getElementById("session-speaker-pic-container").setAttribute("data-index", speakers.indexOf(speaker));
+            sessionViewDay2.getElementById("session-speaker-name").setAttribute("data-index", speakers.indexOf(speaker));
 
-            scheduleViewDay2.appendChild(sessionView);
+            scheduleViewDay2.appendChild(sessionViewDay2);
         }
     }
 }
@@ -262,10 +257,11 @@ function fillSpeakerDataOnModal(speaker) {
     }
 }
 
-
+/*
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
 }
+*/
 
 function renderSnsView(snsUrl)
 {
@@ -304,5 +300,6 @@ function translateSessionLevel(level)
 
 function renderStats() {
     document.getElementById("num-of-speakers").innerHTML = speakers.length;
-    document.getElementById("num-of-sessions").innerHTML = day1Sessions.length + day2Sessions.length;
+    console.log(sessions);
+    document.getElementById("num-of-sessions").innerHTML = sessions.length;
 }

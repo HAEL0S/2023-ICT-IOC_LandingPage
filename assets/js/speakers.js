@@ -217,27 +217,13 @@ export function LoadSpeakers() {
     ]
 }
 
-export function LoadSpeakersForDay(day) {
+export function LoadSessions() {
   var speakers = LoadSpeakers()
-  var filteredSpeakers = []
-  for(var speaker of speakers) {
-    for(var session of speaker.sessions) {
-      if (session.day != day) { continue; }
-      filteredSpeakers.push(speaker)
-      break
+  var sessions = [];
+  for (var i = 0; i < speakers.length; i++) {
+    for (var j = 0; j < speakers[i].sessions.length; j++) {
+      sessions.push(speakers[i].sessions[j]);
     }
   }
-  return filteredSpeakers
-}
-
-export function LoadSessions(day) {
-  var speakers = LoadSpeakers()
-  var sessions = []
-  for(var speaker of speakers) {
-    for(var session of speaker.sessions) {
-      if (session.day != day) { continue; }
-      sessions.push(session)
-    }
-  }
-  return sessions
+  return sessions;
 }
