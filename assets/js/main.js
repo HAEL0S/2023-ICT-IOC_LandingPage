@@ -1,9 +1,15 @@
 "use strict";
-import {LoadSpeakers} from './speakers.js';
+import {LoadSpeakers, LoadSpeakersForDay, LoadSessions} from './speakers.js';
 
 /* data */
 const speakers = LoadSpeakers();
 shuffle(speakers);
+
+const day1Speakers = LoadSpeakersForDay(1);
+const day2Speakers = LoadSpeakersForDay(2);
+
+const day1Sessions = LoadSessions(1);
+const day2Sessions = LoadSessions(2);
     
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
@@ -169,7 +175,7 @@ function renderSessions()
     var scheduleViewDay1 = document.getElementById("session-list-day1");
     var sessionTemplateDay1 = document.querySelector('#template-session');
 
-    for(var speaker of speakers)
+    for(var speaker of day1Speakers)
     {
         for(var session of speaker.sessions)
         {
@@ -194,7 +200,7 @@ function renderSessions()
     var scheduleViewDay2 = document.getElementById("session-list-day2");
     var sessionTemplateDay2 = document.querySelector('#template-session');
 
-    for(var speaker of speakers)
+    for(var speaker of day2Speakers)
     {
         for(var session of speaker.sessions)
         {
@@ -298,5 +304,5 @@ function translateSessionLevel(level)
 
 function renderStats() {
     document.getElementById("num-of-speakers").innerHTML = speakers.length;
-    document.getElementById("num-of-sessions").innerHTML = speakers.length;
+    document.getElementById("num-of-sessions").innerHTML = day1Sessions.length + day2Sessions.length;
 }

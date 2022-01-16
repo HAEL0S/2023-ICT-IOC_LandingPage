@@ -216,3 +216,28 @@ export function LoadSpeakers() {
                               1, 2)])
     ]
 }
+
+export function LoadSpeakersForDay(day) {
+  var speakers = LoadSpeakers()
+  var filteredSpeakers = []
+  for(var speaker of speakers) {
+    for(var session of speaker.sessions) {
+      if (session.day != day) { continue; }
+      filteredSpeakers.push(speaker)
+      break
+    }
+  }
+  return filteredSpeakers
+}
+
+export function LoadSessions(day) {
+  var speakers = LoadSpeakers()
+  var sessions = []
+  for(var speaker of speakers) {
+    for(var session of speaker.sessions) {
+      if (session.day != day) { continue; }
+      sessions.push(session)
+    }
+  }
+  return sessions
+}
