@@ -1,15 +1,13 @@
 "use strict";
-import {LoadSpeakers, LoadSessions} from './speakers.js';
+import {LoadSpeakers} from './speakers.js';
 
 /* data */
 const speakers = LoadSpeakers();
-const sessions = LoadSessions();
 //shuffle(speakers);
     
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
 
-renderStats();
 renderSpeakerSection();
 renderSessions();
 registerModalHandler();
@@ -296,10 +294,4 @@ function translateSessionLevel(level)
         case 3: return "실무에서 개발하시는 분께 추천 드려요.";
         case 4: return "전문가를 위해 추천 드려요.";
     }
-}
-
-function renderStats() {
-    document.getElementById("num-of-speakers").innerHTML = speakers.length;
-    console.log(sessions);
-    document.getElementById("num-of-sessions").innerHTML = sessions.length;
 }
