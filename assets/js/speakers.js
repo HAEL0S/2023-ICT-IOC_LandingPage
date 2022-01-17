@@ -47,8 +47,8 @@ export function LoadSpeakers() {
                   ["https://www.facebook.com/jungwoo.kim1230", "https://rokag3-gb.github.io/"],
                   [new Session(sessionCategory[0],
                                 "ORM의 특성을 비교해보자.",
-                                "ADO.NET, EF, Dapper 등 (가능하면 Petapoco 까지) 에 대해 장단점 설명과 성능 비교",
-                                "풀스택 또는 백엔드 개발자가 RDB와 통신할 때 선택할 수 밖에 없는 ORM에 대해서 장단점, 성능 비교 등의 인사이트를 드리고자 합니다.",
+                                "전통의 ADO.NET 와 Entity Framework, Dapper 의 특징, 장단점 설명, 간단한 샘플 소스코드, 성능 비교 테스트",
+                                "풀스택 또는 백엔드 개발자가 DB와 통신할 때 선택할 수 밖에 없는 몇가지 ORM에 대해서 장단점, 특징, 성능 비교 등의 인사이트를 드리고자 합니다.",
                                 1, 1,
                                 new TimeSpan(0,0,25,10), 44)]),
 
@@ -182,8 +182,8 @@ export function LoadSpeakers() {
                   ["https://github.com/level120"],
                   [new Session(sessionCategory[2],
                               ".NET 6에서 도입예정인 MAUI 기술 소개 및 Xamarin과의 차이점 알아보기",
-                              "Xamarin을 차세대 기술인 MAUI에 대해서 알아보고 현재 기술인 Xamarin과 어떤 차이가 있는지 비교합니다.",
-                              "기존 Xamarin을 사용한 분들이라면 이제부터 새롭게 도입될 MAUI의 특성을 파악하고 Xamarin과의 차이를 이해할 수 있습니다.<br/>간단한 예제를 통해 그 차이를 눈으로 쉽게 확인할 수 있습니다.",
+                              "Xamarin의 차세대 기술인 MAUI에 대해서 알아보고 간단힌 예제를 통해 새롭게 등장한 MVU 패턴과 그 특성에 대해 알아봅니다. MVU 패턴은 기존의 MVVM 패턴에 익숙한 분들에게는 다소 낯설지만 Flutter나 JS에 익숙하신 분들께서는 조금 더 쉽게 UI를 작성하고 데이터 바인딩에 대한 개념을 잡을 수 있습니다.",
+                              "기존 Xamarin을 사용한 분들이라면 이제부터 새롭게 도입될 MAUI의 특성을 파악하고 Xamarin과의 차이를 이해할 수 있습니다. 간단한 예제를 통해 그 차이를 눈으로 쉽게 확인할 수 있습니다.",
                               2, 2,
                               new TimeSpan(0,0,35,11), 46)]),
 
