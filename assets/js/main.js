@@ -177,6 +177,7 @@ function renderSessions()
             sessionViewDay1.getElementById("session-speaker-name").innerHTML = speaker.name;
             sessionViewDay1.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
 
+            sessionViewDay1.getElementById("session-schedule").innerHTML = toStringFromTimeSpan(session.startAt, session.duration);
             sessionViewDay1.getElementById("session-title").innerHTML = session.title;
             sessionViewDay1.getElementById("session-category").innerHTML = session.category;
             sessionViewDay1.getElementById("session-description").innerHTML = session.description;
@@ -202,6 +203,7 @@ function renderSessions()
             sessionViewDay2.getElementById("session-speaker-name").innerHTML = speaker.name;
             sessionViewDay2.getElementById("session-speaker-pic").setAttribute("src", speaker.pic);
 
+            sessionViewDay2.getElementById("session-schedule").innerHTML = toStringFromTimeSpan(session.startAt, session.duration);
             sessionViewDay2.getElementById("session-title").innerHTML = session.title;
             sessionViewDay2.getElementById("session-category").innerHTML = session.category;
             sessionViewDay2.getElementById("session-description").innerHTML = session.description;
@@ -293,5 +295,28 @@ function translateSessionLevel(level)
         case 2: return "주제에 친숙하신 분께 추천 드려요.";
         case 3: return "실무에서 개발하시는 분께 추천 드려요.";
         case 4: return "전문가를 위해 추천 드려요.";
+    }
+}
+
+function toStringFromTimeSpan(startAt, duration)
+{
+    if (startAt.totalHours() < 12)
+    {
+        let endAt = TimeSpan.FromSeconds(startAt.totalSeconds());
+        endAt.addMinutes(duration);
+        return "오전 " + startAt + "-" + endAt;
+    }
+    else if (startAt.totalHours() < 13)
+    {
+        let endAt = TimeSpan.FromSeconds(startAt.totalSeconds());
+        endAt.addMinutes(duration);
+        return "오후 " + startAt + "-" + endAt;
+    }
+    else
+    {   
+        startAt.subtractHours(12);
+        let endAt = TimeSpan.FromSeconds(startAt.totalSeconds());
+        endAt.addMinutes(duration);
+        return "오후 " + startAt + "-" + endAt;
     }
 }
