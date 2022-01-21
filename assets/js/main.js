@@ -98,21 +98,22 @@ var target_date = new Date("Jan 21, 2022").getTime();
 var days, hours, minutes, seconds;
  
 // get tag element
-var countdown =  document.getElementById("countdown-box");
-var days_span = document.createElement("SPAN");
-days_span.className = 'days';
-countdown.appendChild(days_span);
-var hours_span = document.createElement("SPAN");
-hours_span.className = 'hours';
-countdown.appendChild(hours_span);
-var minutes_span = document.createElement("SPAN");
-minutes_span.className = 'minutes';
-countdown.appendChild(minutes_span);
-var secs_span = document.createElement("SPAN");
-secs_span.className = 'secs';
-countdown.appendChild(secs_span);
+// var countdown =  document.getElementById("countdown-box");
+// var days_span = document.createElement("SPAN");
+// days_span.className = 'days';
+// countdown.appendChild(days_span);
+// var hours_span = document.createElement("SPAN");
+// hours_span.className = 'hours';
+// countdown.appendChild(hours_span);
+// var minutes_span = document.createElement("SPAN");
+// minutes_span.className = 'minutes';
+// countdown.appendChild(minutes_span);
+// var secs_span = document.createElement("SPAN");
+// secs_span.className = 'secs';
+// countdown.appendChild(secs_span);
  
 // update the tag with id "countdown" every 1 second
+/*
 setInterval(function () {
  
     // find the amount of "seconds" between now and target
@@ -136,6 +137,7 @@ setInterval(function () {
     secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">초</span>'; 
  
 }, 1000);
+*/
 
 /* ==== ==== */
 function renderSpeakerSection() {
