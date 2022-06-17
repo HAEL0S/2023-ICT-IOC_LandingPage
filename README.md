@@ -6,4 +6,4 @@
 
 [https://dotnetdev-kr.github.io/DotNetConf2022_LandingPage/](https://dotnetdev-kr.github.io/DotNetConf2022_LandingPage/) 에서 미리 보실 수 있습니다.
 
-(https://github.com/HAEL0S/2023-ICT-IOC_LandingPage/blob/master/assets/images/speakers/Greg-Lutz.jpg)
+https://github.com/HAEL0S/2023-ICT-IOC_LandingPage/blob/master/assets/images/speakers/Greg-Lutz.jpg
